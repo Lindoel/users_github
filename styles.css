@@ -1,0 +1,174 @@
+:root {
+    --color_01: #3D3D3D;
+    --color_02: #d0f57fde;
+    --color_03: #217373;
+    --color_04: #173540;
+    --color_05: #161F30;
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    padding: 22px;
+    background: var(--color_01);
+}
+
+header input {
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+}
+
+.user_content {
+    padding: 10px;
+    margin-bottom: 20px;
+
+    background-color: var(--color_05);
+
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.repos_user_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.repos_user {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 10px #33333380;
+    
+    background-color: var(--color_02);
+
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+a {
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    color: #000;
+    background-color: #fff;
+}
+
+a:hover {
+    color: var(--color_03);
+}
+
+img {
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px;
+}
+
+.buttonModal {
+    width: 80%;
+    margin-top: 10px;
+    padding: 3px;
+    border: solid 2px #000;
+    border-radius: 3px;
+
+    color: #fff;
+    background-color: var(--color_03);
+
+    cursor: pointer;
+
+    transition: all 600ms ease;
+}
+
+.buttonModal:hover {
+    letter-spacing: 0.5px;
+    
+    color: yellow;
+
+    transition: all 600ms ease;
+}
+
+.modalDetails {
+    max-width: 280px;
+    padding: 10px;
+    border-radius: 10px 0;
+    box-shadow: 0 0 10px;
+
+    color: yellow;
+    background-color: var(--color_03);
+   
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.modalClone {
+    margin-top: 10px;
+}
+
+.buttonClone {
+    border-radius: 10px;
+    border: none;
+    font-weight: 900;
+    padding: 2px;
+
+    color: yellow;
+    background-color: var(--color_01);
+    
+    cursor: pointer;
+}
+
+.buttonClone:hover {
+    color: #fff;
+}
+
+.buttonCloseModal {
+    border-radius: 8px;
+    font-weight: 900;
+    cursor: pointer;
+
+    color: #fff;
+    background-color: red;
+
+}
+
+.buttonCloseModal:hover {
+    color: #000;
+}
+
+.butttonModalArea {
+    width: 100%;
+    text-align: end;
+}
+
+#link_profile {
+    max-width: 300px;
+}
+
